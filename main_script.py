@@ -7,5 +7,4 @@ im = Image.open("captcha.jpg")
 # im.show()
 
 text = image_to_string(im)
-#
 # print(text)
