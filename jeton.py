@@ -61,16 +61,104 @@ s.headers['Referer'] = 'http://jeton.araku.ac.ir/Reserve.aspx';
 # print(EVENTVALIDATION)
 
 
+# data={    #Reserving           Jommee             Nahar         Sobhaneh
+#
+#     '__EVENTTARGET':'','__EVENTARGUMENT':'',
+#     '__VIEWSTATE':VIEWSTATE,
+#     '__VIEWSTATEGENERATOR':VIEWSTATEGENERATOR,
+#     '__VIEWSTATEENCRYPTED':'','__EVENTVALIDATION':EVENTVALIDATION,
+#
+#     'GhazaS1':	2,
+#     'GhazaN1':	1,
+#     'GhazaC1':	0,
+#     'HidS1':	3950,
+#     'HidSN1':	2,
+#     'Hid1':	5625,
+#     'HidN1':	1,
+#     'HidC1':	0,
+#     'HidCN1':	0,
+#
+#     'GhazaS2':	0,
+#     'GhazaN2':	0,
+#     'GhazaC2':	0,
+#     'HidS2':	0,
+#     'HidSN2':	0,
+#     'Hid2':	0,
+#     'HidN2':	0,
+#     'HidC2':	0,
+#     'HidCN2':	0,
+#
+#     'GhazaS3':	1,
+#     'GhazaN3':	1,
+#     'GhazaC3':	0,
+#     'HidS3':	3950,
+#     'HidSN3':	1,
+#     'Hid3':	6450,
+#     'HidN3':	1,
+#     'HidC3':	0,
+#     'HidCN3':	0,
+#
+#     'GhazaS4':	0,
+#     'GhazaN4':	0,
+#     'GhazaC4':	0,
+#     'EditC4':	0,
+#     'HidS4':	0,
+#     'HidSN4':	0,
+#     'Hid4':	0,
+#     'HidN4':	0,
+#     'HidC4':	0,
+#     'HidCN4':	0,
+#
+#     'GhazaS5':	2,
+#     'GhazaN5':	1,
+#     'GhazaC5':	0,
+#     'HidS5':	5625,
+#     'HidSN5':	2,
+#     'Hid5':	3950,
+#     'HidN5':	1,
+#     'HidC5':	0,
+#     'HidCN5':	0,
+#
+#     'GhazaS6':	0,
+#     'GhazaN6':	1,
+#     'EditN6':	1,
+#     'txtn_numGhazac6':	'on',
+#     'GhazaC6':	1,
+#     'EditC6':	1,
+#     'txtc_numGhazac6':	'on',
+#     'HidS6':	0,
+#     'HidSN6':	0,
+#     'Hid6':	6450,
+#     'HidN6':	1,
+#     'HidC6':	3275,
+#     'HidCN6':	1,
+#
+#     'GhazaS7':	0,
+#     'GhazaN7':	0,
+#     'GhazaC7':	0,
+#     'HidS7':	0,
+#     'HidSN7':	0,
+#     'Hid7':	0,
+#     'HidN7':	0,
+#     'HidC7':	0,
+#     'HidCN7':	0,
+#
+#     'RD_Self':	1,
+#     'btn_saveKharid':	'تائید',
+#     'Self':	1,
+#     }
+
+
 data={
 
-    '__EVENTTARGET':'','__EVENTARGUMENT':'',
+    '__EVENTTARGET':'btnnextweek1','__EVENTARGUMENT':'',
     '__VIEWSTATE':VIEWSTATE,
     '__VIEWSTATEGENERATOR':VIEWSTATEGENERATOR,
     '__VIEWSTATEENCRYPTED':'','__EVENTVALIDATION':EVENTVALIDATION,
 
-    'GhazaS1':	2,
-    'GhazaN1':	1,
-    'GhazaC1':	0,
+    # 'GhazaS1':	2,
+    # 'GhazaN1':	1,
+    # 'GhazaC1':	0,
     'HidS1':	3950,
     'HidSN1':	2,
     'Hid1':	5625,
@@ -78,9 +166,9 @@ data={
     'HidC1':	0,
     'HidCN1':	0,
 
-    'GhazaS2':	0,
-    'GhazaN2':	0,
-    'GhazaC2':	0,
+    # 'GhazaS2':	0,
+    # 'GhazaN2':	0,
+    # 'GhazaC2':	0,
     'HidS2':	0,
     'HidSN2':	0,
     'Hid2':	0,
@@ -88,9 +176,9 @@ data={
     'HidC2':	0,
     'HidCN2':	0,
 
-    'GhazaS3':	1,
-    'GhazaN3':	1,
-    'GhazaC3':	0,
+    # 'GhazaS3':	1,
+    # 'GhazaN3':	1,
+    # 'GhazaC3':	0,
     'HidS3':	3950,
     'HidSN3':	1,
     'Hid3':	6450,
@@ -98,9 +186,9 @@ data={
     'HidC3':	0,
     'HidCN3':	0,
 
-    'GhazaS4':	0,
-    'GhazaN4':	0,
-    'GhazaC4':	0,
+    # 'GhazaS4':	0,
+    # 'GhazaN4':	0,
+    # 'GhazaC4':	0,
     'EditC4':	0,
     'HidS4':	0,
     'HidSN4':	0,
@@ -109,9 +197,9 @@ data={
     'HidC4':	0,
     'HidCN4':	0,
 
-    'GhazaS5':	2,
-    'GhazaN5':	1,
-    'GhazaC5':	0,
+    # 'GhazaS5':	2,
+    # 'GhazaN5':	1,
+    # 'GhazaC5':	0,
     'HidS5':	5625,
     'HidSN5':	2,
     'Hid5':	3950,
@@ -119,23 +207,20 @@ data={
     'HidC5':	0,
     'HidCN5':	0,
 
-    'GhazaS6':	0,
-    'GhazaN6':	1,
     'EditN6':	1,
     'txtn_numGhazac6':	'on',
-    'GhazaC6':	1,
-    'EditC6':	1,
-    'txtc_numGhazac6':	'on',
+    'GhazaC6':	0,
+    'EditC6':	0,
     'HidS6':	0,
     'HidSN6':	0,
     'Hid6':	6450,
     'HidN6':	1,
-    'HidC6':	3275,
-    'HidCN6':	1,
+    'HidC6':	0,
+    'HidCN6':	0,
 
-    'GhazaS7':	0,
-    'GhazaN7':	0,
-    'GhazaC7':	0,
+    # 'GhazaS7':	0,
+    # 'GhazaN7':	0,
+    # 'GhazaC7':	0,
     'HidS7':	0,
     'HidSN7':	0,
     'Hid7':	0,
@@ -144,110 +229,11 @@ data={
     'HidCN7':	0,
 
     'RD_Self':	1,
-    'btn_saveKharid':	'تائید',
+    # 'btn_saveKharid':	'تائید',
     'Self':	1,
-
-    # 'EditC1': '0',
-    # 'EditC2': '0',
-    # 'EditC3': '0',
-    # 'EditC4': '0',
-    # 'EditC5': '0',
-    # 'EditC6': '0',
-
-    # 'EditN1': '0',
-    # 'EditN2': '0',
-    # 'EditN3': '0',
-    # 'EditN4': '0',
-    # 'EditN5': '0',
-    # 'EditN6': '10',
-
-    # 'EditS1': '0',
-    # 'EditS2': '0',
-    # 'EditS3': '0',
-    # 'EditS4': '0',
-    # 'EditS5': '0',
-    # 'EditS6': '0',
-
-    # 'GhazaC1': '0',
-    # 'GhazaC2': '0',
-    # 'GhazaC3': '0',
-    # 'GhazaC4': '0',
-    # 'GhazaC5': '0',
-    # 'GhazaC6': '0',
-    # 'GhazaC7': '0',
-
-    # 'GhazaN1': '1',
-    # 'GhazaN2': '0',
-    # 'GhazaN3': '1',
-    # 'GhazaN4': '0',
-    # 'GhazaN5': '1',
-    # 'GhazaN6': '1',
-    # 'GhazaN7': '0',
-    #
-    # 'GhazaS1': '2',
-    # 'GhazaS2': '0',
-    # 'GhazaS3': '1',
-    # 'GhazaS4': '0',
-    # 'GhazaS5': '2',
-    # 'GhazaS6': '0',
-    # 'GhazaS7': '0',
-    #
-    # 'Hid1': '5625',
-    # 'Hid2': '0',
-    # 'Hid3': '6450',
-    # 'Hid4': '0',
-    # 'Hid5': '3950',
-    # 'Hid6': '6450',
-    # 'Hid7': '0',
-    #
-    # 'HidC1': '0',
-    # 'HidC2': '0',
-    # 'HidC3': '0',
-    # 'HidC4': '0',
-    # 'HidC5': '0',
-    # 'HidC6': '0',
-    # 'HidC7': '0',
-    #
-    # 'HidCN1': '0',
-    # 'HidCN2': '0',
-    # 'HidCN3': '0',
-    # 'HidCN4': '0',
-    # 'HidCN5': '0',
-    # 'HidCN6': '0',
-    # 'HidCN7': '0',
-    #
-    # 'HidN1': '1',
-    # 'HidN2': '0',
-    # 'HidN3': '1',
-    # 'HidN4': '0',
-    # 'HidN5': '1',
-    # 'HidN6': '1',
-    # 'HidN7': '0',
-    #
-    # 'HidS1': '3950',
-    # 'HidS2': '0',
-    # 'HidS3': '3950',
-    # 'HidS4': '0',
-    # 'HidS5': '5625',
-    # 'HidS6': '0',
-    # 'HidS7': '0',
-    #
-    # 'HidSN1': '2',
-    # 'HidSN2': '0',
-    # 'HidSN3': '1',
-    # 'HidSN4': '0',
-    # 'HidSN5': '2',
-    # 'HidSN6': '0',
-    # 'HidSN7': '0',
-    #
-    # 'txtn_numGhazac6':'on',
-    # 'RD_Self':'1',
-    # 'Self':'1',
-    #
-    # 'btn_saveKharid':'تائید',
-
-
     }
+
+
 # print(VIEWSTATE)
 # print(len(VIEWSTATE))
 # data['__VIEWSTATE']=VIEWSTATE
@@ -256,6 +242,7 @@ data={
 #
 
 r=s.post(urlReserve,data=data)
+print(r.text)
 
 # print(s.headers)
 # sessionId=s.cookies.get_dict('ASP.NET_SessionId')
