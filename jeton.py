@@ -61,7 +61,7 @@ s.headers['Referer'] = 'http://jeton.araku.ac.ir/Reserve.aspx';
 # print(EVENTVALIDATION)
 
 
-# data={    #Reserving           Jommee             Nahar         Sobhaneh
+data={    #Reserving           Jommee             Nahar         Sobhaneh
 #
 #     '__EVENTTARGET':'','__EVENTARGUMENT':'',
 #     '__VIEWSTATE':VIEWSTATE,
@@ -146,10 +146,10 @@ s.headers['Referer'] = 'http://jeton.araku.ac.ir/Reserve.aspx';
 #     'RD_Self':	1,
 #     'btn_saveKharid':	'تائید',
 #     'Self':	1,
-#     }
+    }
 
 
-data={
+data={   #Going to next Week
 
     '__EVENTTARGET':'btnnextweek1','__EVENTARGUMENT':'',
     '__VIEWSTATE':VIEWSTATE,
@@ -207,10 +207,10 @@ data={
     'HidC5':	0,
     'HidCN5':	0,
 
-    'EditN6':	1,
-    'txtn_numGhazac6':	'on',
-    'GhazaC6':	0,
-    'EditC6':	0,
+    # 'EditN6':	1,
+    # 'txtn_numGhazac6':	'on',
+    # 'GhazaC6':	0,
+    # 'EditC6':	0,
     'HidS6':	0,
     'HidSN6':	0,
     'Hid6':	6450,
