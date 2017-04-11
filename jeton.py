@@ -77,6 +77,7 @@ data={
     'HidN1':	1,
     'HidC1':	0,
     'HidCN1':	0,
+
     'GhazaS2':	0,
     'GhazaN2':	0,
     'GhazaC2':	0,
@@ -86,6 +87,7 @@ data={
     'HidN2':	0,
     'HidC2':	0,
     'HidCN2':	0,
+
     'GhazaS3':	1,
     'GhazaN3':	1,
     'GhazaC3':	0,
@@ -95,6 +97,7 @@ data={
     'HidN3':	1,
     'HidC3':	0,
     'HidCN3':	0,
+
     'GhazaS4':	0,
     'GhazaN4':	0,
     'GhazaC4':	0,
@@ -105,6 +108,7 @@ data={
     'HidN4':	0,
     'HidC4':	0,
     'HidCN4':	0,
+
     'GhazaS5':	2,
     'GhazaN5':	1,
     'GhazaC5':	0,
@@ -114,18 +118,21 @@ data={
     'HidN5':	1,
     'HidC5':	0,
     'HidCN5':	0,
+
     'GhazaS6':	0,
     'GhazaN6':	1,
     'EditN6':	1,
     'txtn_numGhazac6':	'on',
-    'GhazaC6':	0,
-    'EditC6':	0,
+    'GhazaC6':	1,
+    'EditC6':	1,
+    'txtc_numGhazac6':	'on',
     'HidS6':	0,
     'HidSN6':	0,
     'Hid6':	6450,
     'HidN6':	1,
-    'HidC6':	0,
-    'HidCN6':	0,
+    'HidC6':	3275,
+    'HidCN6':	1,
+
     'GhazaS7':	0,
     'GhazaN7':	0,
     'GhazaC7':	0,
@@ -135,6 +142,7 @@ data={
     'HidN7':	0,
     'HidC7':	0,
     'HidCN7':	0,
+
     'RD_Self':	1,
     'btn_saveKharid':	'تائید',
     'Self':	1,
