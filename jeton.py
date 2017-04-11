@@ -21,8 +21,8 @@ EVENTVALIDATION=soup.find(id="__EVENTVALIDATION").get('value')
 # print(r.cookies['ASP.NET_SessionId'])
 # print(r.cookies.get_dict())
 # print(r.content)
-print(VIEWSTATE)
-print(len(VIEWSTATE))
+# print(VIEWSTATE)
+# print(len(VIEWSTATE))
 
 
 captcha=url+'/'+soup.find_all('img')[1].get('src')
@@ -62,12 +62,89 @@ s.headers['Referer'] = 'http://jeton.araku.ac.ir/Reserve.aspx';
 
 
 data={
+
+    '__EVENTTARGET':'','__EVENTARGUMENT':'',
+    '__VIEWSTATE':VIEWSTATE,
+    '__VIEWSTATEGENERATOR':VIEWSTATEGENERATOR,
+    '__VIEWSTATEENCRYPTED':'','__EVENTVALIDATION':EVENTVALIDATION,
+
+    'GhazaS1':	2,
+    'GhazaN1':	1,
+    'GhazaC1':	0,
+    'HidS1':	3950,
+    'HidSN1':	2,
+    'Hid1':	5625,
+    'HidN1':	1,
+    'HidC1':	0,
+    'HidCN1':	0,
+    'GhazaS2':	0,
+    'GhazaN2':	0,
+    'GhazaC2':	0,
+    'HidS2':	0,
+    'HidSN2':	0,
+    'Hid2':	0,
+    'HidN2':	0,
+    'HidC2':	0,
+    'HidCN2':	0,
+    'GhazaS3':	1,
+    'GhazaN3':	1,
+    'GhazaC3':	0,
+    'HidS3':	3950,
+    'HidSN3':	1,
+    'Hid3':	6450,
+    'HidN3':	1,
+    'HidC3':	0,
+    'HidCN3':	0,
+    'GhazaS4':	0,
+    'GhazaN4':	0,
+    'GhazaC4':	0,
+    'EditC4':	0,
+    'HidS4':	0,
+    'HidSN4':	0,
+    'Hid4':	0,
+    'HidN4':	0,
+    'HidC4':	0,
+    'HidCN4':	0,
+    'GhazaS5':	2,
+    'GhazaN5':	1,
+    'GhazaC5':	0,
+    'HidS5':	5625,
+    'HidSN5':	2,
+    'Hid5':	3950,
+    'HidN5':	1,
+    'HidC5':	0,
+    'HidCN5':	0,
+    'GhazaS6':	0,
+    'GhazaN6':	1,
+    'EditN6':	1,
+    'txtn_numGhazac6':	'on',
+    'GhazaC6':	0,
+    'EditC6':	0,
+    'HidS6':	0,
+    'HidSN6':	0,
+    'Hid6':	6450,
+    'HidN6':	1,
+    'HidC6':	0,
+    'HidCN6':	0,
+    'GhazaS7':	0,
+    'GhazaN7':	0,
+    'GhazaC7':	0,
+    'HidS7':	0,
+    'HidSN7':	0,
+    'Hid7':	0,
+    'HidN7':	0,
+    'HidC7':	0,
+    'HidCN7':	0,
+    'RD_Self':	1,
+    'btn_saveKharid':	'تائید',
+    'Self':	1,
+
     # 'EditC1': '0',
     # 'EditC2': '0',
     # 'EditC3': '0',
-    'EditC4': '0',
+    # 'EditC4': '0',
     # 'EditC5': '0',
-    'EditC6': '0',
+    # 'EditC6': '0',
 
     # 'EditN1': '0',
     # 'EditN2': '0',
@@ -91,90 +168,94 @@ data={
     # 'GhazaC6': '0',
     # 'GhazaC7': '0',
 
-    'GhazaN1': '1',
-    'GhazaN2': '0',
-    'GhazaN3': '1',
-    'GhazaN4': '0',
-    'GhazaN5': '1',
-    'GhazaN6': '1',
-    'GhazaN7': '0',
+    # 'GhazaN1': '1',
+    # 'GhazaN2': '0',
+    # 'GhazaN3': '1',
+    # 'GhazaN4': '0',
+    # 'GhazaN5': '1',
+    # 'GhazaN6': '1',
+    # 'GhazaN7': '0',
+    #
+    # 'GhazaS1': '2',
+    # 'GhazaS2': '0',
+    # 'GhazaS3': '1',
+    # 'GhazaS4': '0',
+    # 'GhazaS5': '2',
+    # 'GhazaS6': '0',
+    # 'GhazaS7': '0',
+    #
+    # 'Hid1': '5625',
+    # 'Hid2': '0',
+    # 'Hid3': '6450',
+    # 'Hid4': '0',
+    # 'Hid5': '3950',
+    # 'Hid6': '6450',
+    # 'Hid7': '0',
+    #
+    # 'HidC1': '0',
+    # 'HidC2': '0',
+    # 'HidC3': '0',
+    # 'HidC4': '0',
+    # 'HidC5': '0',
+    # 'HidC6': '0',
+    # 'HidC7': '0',
+    #
+    # 'HidCN1': '0',
+    # 'HidCN2': '0',
+    # 'HidCN3': '0',
+    # 'HidCN4': '0',
+    # 'HidCN5': '0',
+    # 'HidCN6': '0',
+    # 'HidCN7': '0',
+    #
+    # 'HidN1': '1',
+    # 'HidN2': '0',
+    # 'HidN3': '1',
+    # 'HidN4': '0',
+    # 'HidN5': '1',
+    # 'HidN6': '1',
+    # 'HidN7': '0',
+    #
+    # 'HidS1': '3950',
+    # 'HidS2': '0',
+    # 'HidS3': '3950',
+    # 'HidS4': '0',
+    # 'HidS5': '5625',
+    # 'HidS6': '0',
+    # 'HidS7': '0',
+    #
+    # 'HidSN1': '2',
+    # 'HidSN2': '0',
+    # 'HidSN3': '1',
+    # 'HidSN4': '0',
+    # 'HidSN5': '2',
+    # 'HidSN6': '0',
+    # 'HidSN7': '0',
+    #
+    # 'txtn_numGhazac6':'on',
+    # 'RD_Self':'1',
+    # 'Self':'1',
+    #
+    # 'btn_saveKharid':'تائید',
 
-    'GhazaS1': '2',
-    'GhazaS2': '0',
-    'GhazaS3': '1',
-    'GhazaS4': '0',
-    'GhazaS5': '2',
-    'GhazaS6': '0',
-    'GhazaS7': '0',
 
-    'Hid1': '5625',
-    'Hid2': '0',
-    'Hid3': '6450',
-    'Hid4': '0',
-    'Hid5': '3950',
-    'Hid6': '6450',
-    'Hid7': '0',
-
-    'HidC1': '0',
-    'HidC2': '0',
-    'HidC3': '0',
-    'HidC4': '0',
-    'HidC5': '0',
-    'HidC6': '0',
-    'HidC7': '0',
-
-    'HidCN1': '0',
-    'HidCN2': '0',
-    'HidCN3': '0',
-    'HidCN4': '0',
-    'HidCN5': '0',
-    'HidCN6': '0',
-    'HidCN7': '0',
-
-    'HidN1': '1',
-    'HidN2': '0',
-    'HidN3': '1',
-    'HidN4': '0',
-    'HidN5': '1',
-    'HidN6': '1',
-    'HidN7': '0',
-
-    'HidS1': '3950',
-    'HidS2': '0',
-    'HidS3': '3950',
-    'HidS4': '0',
-    'HidS5': '5625',
-    'HidS6': '0',
-    'HidS7': '0',
-
-    'HidSN1': '2',
-    'HidSN2': '0',
-    'HidSN3': '1',
-    'HidSN4': '0',
-    'HidSN5': '2',
-    'HidSN6': '0',
-    'HidSN7': '0',
-
-    'txtn_numGhazac6':'on',
-    'RD_Self':'1',
-    'Self':'1',
-
-    'btn_saveKharid':'تائید',
-
-    '__EVENTTARGET':'','__EVENTARGUMENT':'',
-    # '__VIEWSTATE':VIEWSTATE,
-    '__VIEWSTATEGENERATOR':VIEWSTATEGENERATOR,
-    '__VIEWSTATEENCRYPTED':'','__EVENTVALIDATION':EVENTVALIDATION,
     }
-print(VIEWSTATE)
-print(len(VIEWSTATE))
-data['__VIEWSTATE']=VIEWSTATE
-print(data['__VIEWSTATE'])
-print(len(data['__VIEWSTATE']))
+# print(VIEWSTATE)
+# print(len(VIEWSTATE))
+# data['__VIEWSTATE']=VIEWSTATE
+# print(data['__VIEWSTATE'])
+# print(len(data['__VIEWSTATE']))
 #
 
+r=s.post(urlReserve,data=data)
 
-r=requests.post(urlReserve,data=data,cookies=s.cookies.get_dict('ASP.NET_SessionId'))
+# print(s.headers)
+# sessionId=s.cookies.get_dict('ASP.NET_SessionId')
+# print(sessionId)
+# s=requests.session()
+# s.cookies['ASP.NET_SessionId']=sessionId
+# print(s.cookies.get_dict())
+# r=s.post(urlReserve,data=data)
 #
 #
 # html_doc=r.text
